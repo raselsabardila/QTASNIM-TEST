@@ -1,4 +1,4 @@
-const whitelist = []
+const whitelist = ["http://localhost:3000","http://localhost:3001"]
 
 const setting = {
     origin: (origin, callback) => {

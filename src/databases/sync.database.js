@@ -12,11 +12,6 @@ const sync = () => {
         as: "detail_transactions"
     })
 
-    detail_transaction_model.belongsTo(transaction_model, {
-        foreignKey: "transaction_id",
-        as: "transaction"
-    })
-
     detail_transaction_model.belongsTo(product_model, {
         foreignKey: "product_id",
         as: "product"

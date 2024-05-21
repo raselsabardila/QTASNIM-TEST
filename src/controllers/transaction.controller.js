@@ -47,7 +47,7 @@ const create_transaction = async (req, res) => {
 
                     await productUpdate.update({
                         stock: productUpdate.stock - product.qty,
-                        total_sell: productUpdate.total_sell + product.qty
+                        total_sell: parseInt(productUpdate.total_sell) + parseInt(product.qty)
                     })
 
                     resolve(true)
